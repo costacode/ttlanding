@@ -1,30 +1,48 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import dancersImage from "~/assets/dancers.jpg";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
 ---
 
-<ContentSection title="Just ship less" id="intro">
-  <Icon slot="eyebrow" name="logomark" class="h-32" />
+<ContentSection title="TTANGO" id="intro">
+  <!-- <Icon slot="eyebrow" pack="simple-icons" name="bytedance" class="h-32" /> -->
   <Fragment slot="lead">
-    Astro is a new kind of site builder for the
-    <span class="text-primary">modern</span> web.
-    <span class="text-primary">Lightning-fast</span>
-    performance meets <span class="text-primary">powerful</span> developer experience.
+    TTANGO is a new kind of
+    <span class="text-primary">tango</span> training, where 
+    <span class="text-primary">dancing </span>
+    leads to <span class="text-primary">powerful</span> 
+    personal growth and transformation.
   </Fragment>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
-    <a
-      href="https://docs.astro.build/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+  <p class="max-w-3xl text-center text-offset text-base">
+    When I hear the term "Transformational Tango," 
+    I associate it with the idea of tango as a powerful tool for personal growth 
+    and transformation. This could include a focus on how tango can help people 
+    develop greater self-awareness, build more fulfilling relationships, 
+    and cultivate a deeper sense of presence and mindfulness. </p>
+    <p class="max-w-3xl text-center text-offset text-base">It might also involve exploring the therapeutic benefits of tango, 
+    such as how it can help individuals overcome challenges like anxiety, 
+    depression, or trauma. Overall, "Transformative Tango" suggests a deep 
+    and meaningful engagement with the dance, one that has the potential 
+    to bring about significant positive change in people's lives.</p>
+
+    <div
+      id="astronaut"
+      class="w-2/3 self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
-      <Icon pack="mdi" name="telescope" class="h-8" />
-      <span>Read the docs</span>
-    </a>
-    <a
-      href="https://astro.new/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <Icon pack="mdi" name="rocket" class="h-8" />
-      <span>Try it out</span>
-    </a>
-  </div>
+      <Picture
+        class="h-full w-full object-cover"
+        src={dancersImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="A floating astronaut in a space suit"
+      />
+    </div>
+
+
 </ContentSection>
