@@ -4,7 +4,12 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+<<<<<<< HEAD
   site: "https://astro-moon-landing.netlify.app/",
+=======
+  site: "https://costacode.github.io",
+  base: '/',
+>>>>>>> parent of f21a926... change base with repo name
   integrations: [
     tailwind(),
     image({
