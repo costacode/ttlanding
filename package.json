@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build pagecrypt src/index.html dist/index.html $PASSWORD && cp -R src/css dist/",
+    "build": "astro build pagecrypt src/index.html dist/index.html $PASSWORD && cp -R dist/",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
