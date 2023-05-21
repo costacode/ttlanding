@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "postbuild": "pagecrypt index.html $PASSWORD",
+    "postbuild": "pagecrypt src/index.html dist/index.html $PASSWORD && cp -R src/css dist/",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
