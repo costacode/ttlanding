@@ -7,7 +7,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "postbuild": "pagecrypt src/index.html dist/index.html $PASSWORD && cp -R src/css dist/",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
@@ -29,7 +28,6 @@
     "@fontsource/inter": "^4.5.15",
     "@fontsource/milonga": "^4.5.9",
     "micromodal": "^0.4.10",
-    "pagecrypt": "^6.1.0",
     "sharp": "^0.31.2",
     "tailwindcss": "^3.3.2",
     "tiny-invariant": "^1.3.1"
