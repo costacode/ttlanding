@@ -4,8 +4,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://costacode.github.io",
-  base: '/ttlanding',
+  site: "https://astro-moon-landing.netlify.app/",
   integrations: [
     tailwind(),
     image({
