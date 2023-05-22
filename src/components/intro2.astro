@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import dancersImage from "~/assets/dancers.jpg";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
+---
+
+<ContentSection title="" id="intro">
+  <!-- <Icon slot="eyebrow" pack="simple-icons" name="bytedance" class="h-32" /> -->
+  <Fragment slot="lead">
+    <span class="text-primary">Transformational Tango</span> is a new kind of
+    <span class="text-primary">tango</span> training, where 
+    <span class="text-primary">dancing </span>
+    leads to <span class="text-primary">powerful</span> 
+    personal growth and transformation.
+  </Fragment>
+  <p class="max-w-3xl text-center text-offset text-base">
+    When I hear the term "Transformational Tango," 
+    I associate it with the idea of tango as a powerful tool for personal growth 
+    and transformation. This could include a focus on how tango can help people 
+    develop greater self-awareness, build more fulfilling relationships, 
+    and cultivate a deeper sense of presence and mindfulness. </p>
+    <p class="max-w-3xl text-center text-offset text-base">It might also involve exploring the therapeutic benefits of tango, 
+    such as how it can help individuals overcome challenges like anxiety, 
+    depression, or trauma. Overall, "Transformative Tango" suggests a deep 
+    and meaningful engagement with the dance, one that has the potential 
+    to bring about significant positive change in people's lives.</p>
+
+    <div
+      class="w-full self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
+    >
+      <Picture
+        class="h-full w-full object-cover"
+        src={dancersImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="Tango couple"
+      />
+    </div>
+
+
+</ContentSection>
