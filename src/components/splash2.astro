@@ -2,6 +2,7 @@
 import { Picture } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
 import HeroImage from "~/components/hero-image.astro";
+import HeroImage2 from "~/components/hero-image2.astro";
 import Starfield from "~/components/starfield.astro";
 
 const widths = [450, 800];
@@ -9,8 +10,8 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
 <section class="relative h-full bg-black">
-  <div class="absolute inset-1 overflow-hidden opacity-40">
-    <HeroImage />
+  <div class="absolute inset-1 overflow-hidden opacity-90">
+    <HeroImage2 />
   </div>
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
@@ -21,7 +22,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     >
     <Icon pack="simple-icons" name="bytedance" class="h-16 text-white" />
     <div
-        class="gradient-text font-['Milonga'] text-center font-black !leading-[1.16] tracking-tighter md:tracking-normal text-6xl md:text-9xl sm:text-6xl break-all"
+        class="drop-shadow-2xl gradient-text font-['Milonga'] text-center font-black !leading-[1.16] tracking-tighter md:tracking-normal text-6xl md:text-9xl sm:text-6xl break-all"
       >
         Transformational <br />TANGO
       </div>
