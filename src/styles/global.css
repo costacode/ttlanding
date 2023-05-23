@@ -1,12 +1,31 @@
 /* TODO: consider creating <Button> and <GradientText> components */
-a,
+a.hero-cta,
 .btn {
   @apply transition-colors duration-200;
   @apply hover:text-secondary;
   @apply focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-transparent;
+  @apply bg-gradient-to-br from-pink-300 via-rose-400 to-rose-600;
+}
+
+.btn.btn-submit {
+  @apply bg-gradient-to-br from-pink-300 via-rose-400 to-rose-600;
+  height: auto;
+  margin: 0;
+  padding: 18px 22px;
 }
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
   @apply bg-gradient-to-br from-pink-300 via-rose-400 to-rose-600;
+}
+
+/* Mailchimp overrides */
+.brandingLogo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#mc_embed_signup .mc-field-group {
+  width: 96%;
+  padding-bottom: 100% !important;
 }
