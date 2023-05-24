@@ -1,0 +1,16 @@
+---
+import { Picture } from "@astrojs/image/components";
+import mandala from "~/assets/mandala-tango.jpg";
+import dancers2 from "~/assets/dancers2.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Picture
+  class="h-full w-full object-cover"
+  src={mandala}
+  widths={widths}
+  sizes={sizes}
+  alt="Tango dancers"
+/>
