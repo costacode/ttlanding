@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   
-  site: "https://tt-landing.onrender.com/",
+  site: "https://www.transformationaltango.eu",
   // base: '/ttlanding',
 
   integrations: [
