@@ -5,7 +5,8 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "The Journey", url: "#intro" },
+  { title: "The Journey", url: "#intro", target: "_self" },
+  { title: "Contact Us", url: "https://us17.list-manage.com/contact-form?u=6a6529403b261e63b16bb75ba&form_id=877821e585acdd9310ee07a997ca41e8", target: "_blank" },
   // { title: "About", url: "#intro" },
   // { title: "Learning", url: "#features" },
   // { title: "Venue", url: "#venue" },
@@ -27,9 +28,9 @@ const navItems: Array<NavItem> = [
       <nav class="hidden sm:block">
         <ul class="flex items-center gap-6">
           {
-            navItems.map(({ title, url }) => (
+            navItems.map(({ title, url, target, }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-sm" href={url} target={target}>
                   {title}
                 </a>
               </li>
