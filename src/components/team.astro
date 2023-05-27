@@ -1,0 +1,34 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import jesus from "~/images/tt-jesus.jpg";
+---
+
+<ContentSection title="The Team" id="team">
+  <Fragment slot="lead">
+    This is the <span class="text-primary">fantastic</span> team.
+    Each facilitator has a 
+    <span class="text-primary">superpower</span> with years of experience, and
+    <span class="text-primary">lots</span> to share...
+  </Fragment>
+  <div class="max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <img src={jesus.src} alt="">
+          <div class="flex flex-col self-start gap-4 sm:self-auto sm:justify-self-start text-offset">
+            <p class="font-extrabold text-xl">Jesus Sergio Acosta</p>
+            <p class="text-offset text-sm">Facilitator</p>
+            <p class="text-offset text-sm">
+            Spirituality, writing, and cultivating beauty have been wild threads of Jesus Sergio’s life.</p>
+            <p class="text-offset text-sm">
+            He co-founded Dance in Conversation in 2020, as a space to explore relationships and communication dynamics between dancers.</p>
+            <p class="text-offset text-sm">
+            Tango has been his inspiration for life. He believes that tango can lead us to walk with purpose, listen intently and be fully present with our partners and the community around us.</p>
+            <p class="text-offset text-sm">
+            Jesus worked for the BBC and media outlets, nurturing a talent to find the meaning behind events and conversations.</p>
+            <p class="text-offset text-sm">
+            He spent years in a monastery in Mexico, where he learnt to sense and inhabit that wondrous energy that connect us all and makes us better dancers.</p>
+            <p class="text-offset text-sm">
+            On a good day, he celebrates his listening skills and curiosity. On a bad day, he needs his twin, his beloved, and his buddies to get him back on track.</p>
+          </div>          
+        </div>
+      </div>
+</ContentSection>
