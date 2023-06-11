@@ -22,6 +22,10 @@ module.exports = {
       borderColor: {
         default: "var(--color-border)",
       },
+      gridTemplateColumns:
+      {
+        'auto-2': 'auto auto',
+      }
     },
   },
   corePlugins: {
@@ -29,3 +33,4 @@ module.exports = {
   },
   plugins: [require("tailwindcss-fluid-type")],
 };
+
