@@ -1,6 +1,6 @@
 [data-theme="light"] {
   --color-primary: theme("colors.rose.400");
-  --color-secondary: theme("colors.indigo.500");
+  --color-secondary: theme("colors.rose.300");
   --color-text: theme("colors.gray.900");
   --color-text-offset: theme("colors.gray.600");
   --color-background: theme("colors.gray.50");
