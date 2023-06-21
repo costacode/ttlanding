@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import dancersImage from "~/assets/dancers.jpg";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
+---
+
+<ContentSection title="The shifts" id="gains">
+  <div class="relative h-full">
+    <ul class="flex flex-col gap-2 self-end gap-8 sm:self-auto sm:justify-self-end text-offset list-disc items-center">
+      <li>Develop a deep sense of safety on the dance floor and expand your capacity as a space holder</li>
+      <li>Deepen your ability to say no and trust your yes with clear boundaries</li>
+      <li>Rediscover the power of setting intentions and walking with balance on the dance floor</li>
+      <li>Embrace the different parts of yourself that show up at any moment in your dance </li>
+      <li>Embody role archetypes beyond leading and following and understand one another in a community</li>
+      <li>Learn the key elements that focus and empower your dance</li>
+      <li>Shift your dance from thinking and doing to being and trusting</li>
+      <li>Reclaim the wisdom of your body</li>
+    </ul>
+  </div>
+</ContentSection>
