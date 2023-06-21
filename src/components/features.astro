@@ -1,48 +1,49 @@
 ---
 import ContentSection from "~/components/content-section.astro";
+import tangoMandala from "~/assets/mandala-tango.jpg";
 import type { FeatureItem } from "~/types";
 
 const features: Array<FeatureItem> = [
   {
-    title: "Embodiment",
+    title: "Holding space",
     description:
-      "Why tango has such a profound  effect on our health and personal growth. This will be useful if you have a practice of working with people in their personal journey and want to incorporate those healing aspects of tango in your practice.",
+      "This retreat is about learning how to generate your own sense of safety and being able to create a container where you trust who you are in the embrace and offer that energy to your partner or community. We learn how our body responds to perceived threats and what we can do about it.",
     icon: "mdi:handshake",
   },
   {
-    title: "Presence",
+    title: "Getting resources",
     description:
-      "Why tango has such a profound  effect on our health and personal growth. This will be useful if you have a practice of working with people in their personal journey and want to incorporate those healing aspects of tango in your practice.",
-    icon: "mdi:feather",
-  },
-  {
-    title: "Boundaries",
-    description:
-      "Why tango has such a profound  effect on our health and personal growth. This will be useful if you have a practice of working with people in their personal journey and want to incorporate those healing aspects of tango in your practice.",
-    icon: "mdi:directions-fork",
-  },
-  {
-    title: "Intimacy",
-    description:
-       "Why tango has such a profound  effect on our health and personal growth. This will be useful if you have a practice of working with people in their personal journey and want to incorporate those healing aspects of tango in your practice.",
+       "The retreat is packed with practices and exercises that you can bring to your own spaces and comunities. It is an education about the virtues of tango that deepens your presence and enriches your relationships and your connections. Simple and powerful tools for life.",
     icon: "mdi:graph",
   },
   {
-    title: "Vulnerability",
+    title: "Empowering metaphors",
     description:
-       "Why tango has such a profound  effect on our health and personal growth. This will be useful if you have a practice of working with people in their personal journey and want to incorporate those healing aspects of tango in your practice.",
+      "This retreat equips us with a framework which we can introduce to our comunity. It develops a language to express our emotional progress, our awarenes and readiness for life and in our dance. We learn powerful metaphors to better express ourselves through energy and imagination.",
+    icon: "mdi:feather",
+  },
+  {
+    title: "Deepening relationships",
+    description:
+       "On this retreat, we learn to connect in a safe container with our partners. We explore ways to respond and identify the impact we have on each other. On this retreat, we have the opportunity of experiencing safety and comfort in the embrace ultimately leading to more trust and intimacy.",
     icon: "mdi:search-web",
   },
   {
-    title: "Community",
+    title: "Setting boundaries",
     description:
-      "Why tango has such a profound  effect on our health and personal growth. This will be useful if you have a practice of working with people in their personal journey and want to incorporate those healing aspects of tango in your practice.",
+      "Healthy boundaries are not rigid walls that separate us. The concept of boundaries we explore and practise in this retreat has to do with points of agreement when meeting anybody on the dance floor. We learn how to assert boundaries in a way that creates connection and intimacy, rather than division or discord.",
+    icon: "mdi:directions-fork",
+  },
+  {
+    title: "Exploring archetypes",
+    description:
+      "The innocent child, the seducer, the carer, the perfectionist, the dominant, the follower, the leader, the integrator, the technical, the performer. Which is the one you are most familiar with? On this retreat we play with roles and understand how they define our dance.",
     icon: "mdi:account-group",
   },
 ];
 ---
 
-<ContentSection title="Learning" id="features">
+<ContentSection title="Key topics" id="features">
   <Fragment slot="lead">
     You will learn a <span class="text-primary">fresh</span> approach to tango. 
     Whether you are a
@@ -59,4 +60,15 @@ const features: Array<FeatureItem> = [
       ))
     }
   </ul>
+
+  <div class="relative h-full">
+    <div class="flex flex-col self-end gap-8 sm:self-auto sm:justify-self-end text-offset">
+      <img src={tangoMandala.src} alt="" class="">
+      <p class="font-extrabold text-xl text-primary">OUR PRACTICE</p>
+      <p>We are drawing from our experience on dancing and teaching tango and working in areas of personal development. 
+      <p>This is a collaboration between two schools, <i>Dance in Conversation</i> and <i>Despertango</i>, putting together resources focused on relationships, authentic expression and spirituality. 
+      <p>We are bringing our experience on coaching couples and using tools like Family Constellations. 
+      <p>This retreat benefits from our deep work and training on somatic therapy and embodiment practices. </p>
+    </div>
+  </div>
 </ContentSection>
