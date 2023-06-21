@@ -7,6 +7,7 @@ a.hero-cta,
   @apply bg-gradient-to-br from-pink-300 via-rose-400 to-rose-600;
 }
 
+.btn.btn-standard,
 .btn.btn-submit {
   @apply bg-gradient-to-br from-pink-300 via-rose-400 to-rose-600;
   height: auto;

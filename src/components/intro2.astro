@@ -3,13 +3,14 @@ import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 import { Picture } from "@astrojs/image/components";
 import dancersImage from "~/assets/dancers.jpg";
+import team from "~/images/team.jpg";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 
 ---
 
-<ContentSection title="A transformative journey" id="intro">
+<ContentSection title="" id="intro">
   <!-- <Icon slot="eyebrow" pack="simple-icons" name="bytedance" class="h-32" /> -->
   <!-- <Fragment slot="lead">
     Experience the
@@ -35,14 +36,16 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
       <p>Regardless of your dancing level, if you are a therapist, coach, tango teacher or a curious dancer, and want to 
         <span class="text-primary font-bold">dive into the possibilities</span> of movement and dance to support 
       your own and others' personal transformation, this call is for you.</p>
-      <p><span class="text-primary text-lg">Save the dates: 4th - 9th of February 2024</span> </p>
-      <p>
-      We will announce all the details very soon. In the meantime join the waitlist and be among the first to receive our invitation.
-      </p>
     </div>
 
     <!-- COL 2 -->
-    <div class="self-start sm:self-auto sm:justify-self-start mb-24">
+    <div class="flex flex-col gap-24 self-end sm:self-auto sm:justify-self-start justify-between">
+      <div class="flex flex-col gap-8 text-center">
+        <a href="#" class="btn btn-standard text-white font-bold text-center py-2 px-4 rounded-full">GET YOUR TICKET</a>
+        <p>4th - 9th of February 2024 <br />
+        Malaga, Spain</p>
+      </div>
+
 
       <!-- Begin Mailchimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
@@ -56,7 +59,6 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
       </style>
 
       <div id="mc_embed_signup">
-        <p class="text-offset text-base font-bold text-2xl">Keep me informed</p>
         <p class="text-offset text-base py-2">
             Receive news and updates about the retreat.</p>
         <form action="https://danceinconversation.us17.list-manage.com/subscribe/post?u=6a6529403b261e63b16bb75ba&amp;id=6e15355110&amp;f_id=00aa4ae0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
