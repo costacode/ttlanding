@@ -3,6 +3,7 @@ import { Icon } from "astro-icon";
 import coreImage from "~/assets/music.png";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
+import logo from "~/images/logo-noslogan.png";
 
 const navItems: Array<NavItem> = [
   { title: "The Journey", url: "#gains", target: "_self"},
@@ -21,10 +22,10 @@ const navItems: Array<NavItem> = [
   id="page-header"
   class="absolute z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
+  <a class="flex gap-3 hover:!text-default" href="#">
     <h1 class="sr-only">Transformational Tango</h1>
-    <Icon id="header-home-icon" pack="simple-icons" name="bytedance" class="hidden h-10" />
-    <div id="header-home-words" class="hidden h-4">Transformational Tango</div>
+    <img id="header-home-icon" src={logo.src} alt="" class="h-10">
+    <div id="header-home-words" class="hidden h-4 font-['Milonga']"><h1>Transformational Tango</h1><span class="tagline">dance, connect, evolve</span></div>
   </a>
   <div>
     <div class="flex items-center gap-6">
@@ -146,4 +147,12 @@ const navItems: Array<NavItem> = [
   .modal.is-open {
     @apply block;
   }
+  .tagline {
+    display: block;
+    color: #ED768D;
+    font-size: 16px;
+    margin-top: -6px;
+    text-align: right;
+    margin-right: 1px;
+}
 </style>
