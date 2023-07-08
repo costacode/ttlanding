@@ -29,7 +29,7 @@ const navItems: Array<NavItem> = [
   </a>
   <div>
     <div class="flex items-center gap-6">
-      <nav class="hidden sm:block">
+      <nav class="hidden md:block">
         <ul class="flex items-center gap-6">
           {
             navItems.map(({ title, url, target, }) => (
@@ -45,7 +45,7 @@ const navItems: Array<NavItem> = [
       <button
         id="open-nav-button"
         type="button"
-        class="btn sm:hidden"
+        class="btn md:hidden"
         aria-label="Navigation"
       >
         <Icon pack="mdi" name="menu" class="h-8" />
@@ -121,7 +121,7 @@ const navItems: Array<NavItem> = [
     const d = page.clientHeight - page.scrollTop - header.offsetHeight;
     header.classList.toggle("fixed-header", d < 0);
     headerHomeIcon.classList.toggle("sm:block", d < 0);
-    headerHomeWords.classList.toggle("sm:block", d < 0);
+    headerHomeWords.classList.toggle("lg:block", d < 0);
   });
 
   menu.addEventListener("click", (event) => {
