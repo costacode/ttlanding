@@ -1,0 +1,15 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Header from "~/components/header.astro";
+import Intro2 from "~/components/intro2.astro";
+import Banner from "~/components/banner.astro";
+
+const pageTitle = 'Tickets | Transformational Tango';
+---
+<SiteLayout title={pageTitle}>
+    <Header />
+    <Banner />
+    <div class="space-y-24 px-8 py-32 max-w-7xl mx-auto">
+        <h1>Tickets</h1>
+    </div>
+</SiteLayout>
