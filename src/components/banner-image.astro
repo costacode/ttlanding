@@ -1,0 +1,15 @@
+---
+import { Picture } from "@astrojs/image/components";
+import BannerDancers from "~/assets/banner-dancers.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Picture
+  class="w-full object-cover"
+  src={BannerDancers}
+  widths={widths}
+  sizes={sizes}
+  alt="Tango dancers"
+/>
