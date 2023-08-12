@@ -6,10 +6,10 @@ import type { NavItem } from "~/types";
 import logo from "~/images/logo-noslogan.png";
 
 const navItems: Array<NavItem> = [
-  { title: "The Journey", url: "#gains", target: "_self"},
-  { title: "Learnings", url: "#features", target: "_self"},
-  { title: "Facilitators", url: "#team", target: "_self"},
-  { title: "Venue", url: "#venue", target: "_self"},
+  { title: "The Journey", url: "/#intro", target: "_self"},
+  { title: "Learnings", url: "/#features", target: "_self"},
+  { title: "Facilitators", url: "/#team", target: "_self"},
+  { title: "Venue", url: "/#venue", target: "_self"},
   { title: "Tickets", url: "/tickets", target: "_self"},
   { title: "Contact Us", url: "https://us17.list-manage.com/contact-form?u=6a6529403b261e63b16bb75ba&form_id=877821e585acdd9310ee07a997ca41e8", target: "_blank" },
   // { title: "About", url: "#intro" },
@@ -22,7 +22,7 @@ const navItems: Array<NavItem> = [
   id="page-header"
   class="absolute z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
-  <a class="flex gap-3 hover:!text-default" href="#">
+  <a class="flex gap-3 hover:!text-default" href="/">
     <h1 class="sr-only">Transformational Tango</h1>
     <img id="header-home-icon" src={logo.src} alt="" class="h-10">
     <div id="header-home-words" class="hidden h-4 font-['Milonga']"><h1>Transformational Tango</h1><span class="tagline">dance, connect, evolve</span></div>
