@@ -1,77 +1,9 @@
 ---
-import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
-import type { CompatibilityItem } from "~/types";
 import venue1 from "~/images/venue/venue1.jpg";
 import venue2 from "~/images/venue/venue2.jpg";
 import venue3 from "~/images/venue/venue3.png";
 import venue4 from "~/images/venue/venue4.jpg";
-
-const frameworks: Array<CompatibilityItem> = [
-  {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
-  },
-  {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
-  },
-  {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
-  },
-  {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
-  },
-];
-
-const platforms: Array<CompatibilityItem> = [
-  {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
-  },
-  {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
-  },
-];
 ---
 
 <ContentSection title="Venue" id="venue">
@@ -86,7 +18,6 @@ const platforms: Array<CompatibilityItem> = [
         <div class="flex flex-col gap-4 text-center">
           <img src={venue4.src} alt="" class="">
           <p class="text-offset font-extrabold text-xl mt-4">
-          This is a <span class="text-primary">magical</span> place. <br><br>
           Essential part of this retreat is enjoyment and <span class="text-primary">finding solace</span>, with time to reflect and relax. 
           </p>
           <p class="text-offset text-sm">
