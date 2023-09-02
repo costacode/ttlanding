@@ -5,13 +5,13 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 import logo from "~/images/logo-noslogan.png";
 
-const navItems: Array<NavItem> = [
-  { title: "The Journey", url: "/#intro", target: "_self", className: "text-sm"},
-  { title: "Learnings", url: "/#features", target: "_self", className: "text-sm"},
-  { title: "Facilitators", url: "/#team", target: "_self", className: "text-sm"},
-  { title: "Venue", url: "/#venue", target: "_self", className: "text-sm"},
-  { title: "Contact us", url: "https://us17.list-manage.com/contact-form?u=6a6529403b261e63b16bb75ba&form_id=877821e585acdd9310ee07a997ca41e8", target: "_blank", className: "text-sm" },
-  { title: "Buy tickets", url: "https://www.tickettailor.com/events/transformationaltango/989841", target: "_self", className: "btn btn-standard text-white text-center !py-2 !px-4 rounded-full !text-sm"},
+const navItems: Array<NavItem> = [ // py-4 text-center text-xl
+  { title: "The Journey", url: "/#intro", target: "_self", className: "text-xl md:text-sm py-4"},
+  { title: "Learnings", url: "/#features", target: "_self", className: "text-xl md:text-sm py-4"},
+  { title: "Facilitators", url: "/#team", target: "_self", className: "text-xl md:text-sm py-4"},
+  { title: "Venue", url: "/#venue", target: "_self", className: "text-xl md:text-sm py-4"},
+  { title: "Contact us", url: "https://us17.list-manage.com/contact-form?u=6a6529403b261e63b16bb75ba&form_id=877821e585acdd9310ee07a997ca41e8", target: "_blank", className: "text-xl md:text-sm py-4" },
+  { title: "Buy tickets", url: "https://www.tickettailor.com/events/transformationaltango/989841", target: "_self", className: "btn btn-standard text-white text-center !py-2 !px-4 rounded-full !text-xl md:!text-sm"},
 ];
 ---
 
@@ -63,14 +63,14 @@ const navItems: Array<NavItem> = [
             </button>
           </header>
           <div class="flex justify-center">
-            <Icon pack="simple-icons" name="bytedance" class="h-16" />
+            <img id="header-home-icon" src={logo.src} alt="" class="h-10">
           </div>
           <nav>
-            <ul class="flex flex-col">
+            <ul class="flex flex-col items-center gap-8">
               {
-                navItems.map(({ title, url }) => (
+                navItems.map(({ title, url, className }) => (
                   <li>
-                    <a class="block py-4 text-center text-xl" href={url}>
+                    <a class={className} href={url}>
                       {title}
                     </a>
                   </li>
