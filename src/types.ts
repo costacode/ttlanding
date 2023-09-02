@@ -26,6 +26,7 @@ export interface NavItem {
   title: string;
   url: string;
   target: string;
+  className: string;
 }
 
 export interface ShowcaseSite {

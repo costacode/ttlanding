@@ -6,15 +6,12 @@ import type { NavItem } from "~/types";
 import logo from "~/images/logo-noslogan.png";
 
 const navItems: Array<NavItem> = [
-  { title: "The Journey", url: "/#intro", target: "_self"},
-  { title: "Learnings", url: "/#features", target: "_self"},
-  { title: "Facilitators", url: "/#team", target: "_self"},
-  { title: "Venue", url: "/#venue", target: "_self"},
-  { title: "Tickets", url: "/tickets", target: "_self"},
-  { title: "Contact Us", url: "https://us17.list-manage.com/contact-form?u=6a6529403b261e63b16bb75ba&form_id=877821e585acdd9310ee07a997ca41e8", target: "_blank" },
-  // { title: "About", url: "#intro" },
-  // { title: "Learning", url: "#features" },
-  // { title: "Venue", url: "#venue" },
+  { title: "The Journey", url: "/#intro", target: "_self", className: "text-sm"},
+  { title: "Learnings", url: "/#features", target: "_self", className: "text-sm"},
+  { title: "Facilitators", url: "/#team", target: "_self", className: "text-sm"},
+  { title: "Venue", url: "/#venue", target: "_self", className: "text-sm"},
+  { title: "Contact us", url: "https://us17.list-manage.com/contact-form?u=6a6529403b261e63b16bb75ba&form_id=877821e585acdd9310ee07a997ca41e8", target: "_blank", className: "text-sm" },
+  { title: "Buy tickets", url: "https://www.tickettailor.com/events/transformationaltango/989841", target: "_self", className: "btn btn-standard text-white text-center !py-2 !px-4 rounded-full !text-sm"},
 ];
 ---
 
@@ -32,9 +29,9 @@ const navItems: Array<NavItem> = [
       <nav class="hidden md:block">
         <ul class="flex items-center gap-6">
           {
-            navItems.map(({ title, url, target, }) => (
+            navItems.map(({ title, url, target, className, }) => (
               <li>
-                <a class="text-sm" href={url} target={target}>
+                <a class={className} href={url} target={target}>
                   {title}
                 </a>
               </li>
