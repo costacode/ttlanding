@@ -1,0 +1,46 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+import { YouTube } from 'astro-embed';
+
+const features: Array<FeatureItem> = [
+  {
+    video: "https://youtu.be/MGlOXO5sm44?si=Ycjx2t-VcyNJpKDw",
+    title: "You will trust yourself more",
+    description:
+      "This retreat is about learning how to generate your own sense of safety and being able to create a container where you trust who you are in the embrace and offer that energy to your partner or community. We learn how our body responds to perceived threats and what we can do about it.",
+    icon: "mdi:handshake",
+  },
+  {
+    video: "https://youtu.be/maBBKtvqy2w?si=Ob14AJ92-peFmwhp",
+    title: "With powerful tools for life",
+    description:
+       "The retreat is packed with practices and exercises that you can bring to your own spaces and comunities. It is an education about the virtues of tango that deepens your presence and enriches your relationships and your connections. Simple and powerful tools for life.",
+    icon: "mdi:graph",
+  },
+  {
+    video: "",
+    title: "And a fuller self-expression",
+    description:
+      "This retreat equips us with a framework which we can introduce to our comunity. It develops a language to express our emotional progress, our awarenes and readiness for life and in our dance. We learn powerful metaphors to better express ourselves through energy and imagination.",
+    icon: "mdi:feather",
+  },
+];
+---
+
+<ContentSection title="How tango transforms lives?" id="voices">
+  <ul class="font-['Milonga'] grid max-w-6xl grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+    <li class="grid items-center gap-4 border border-default bg-offset p-6">
+      <YouTube id="https://youtu.be/MGlOXO5sm44?si=Ycjx2t-VcyNJpKDw" />
+      <p class="text-center text-offset">"The retreat is packed with practices and exercises that you can bring to your own spaces and comunities."</p>
+    </li>
+    <li class="grid items-center gap-4 border border-default bg-offset p-6">
+      <YouTube id="https://youtu.be/maBBKtvqy2w?si=Ob14AJ92-peFmwhp" />
+      <p class="text-center text-offset">"The retreat is packed with practices and exercises that you can bring to your own spaces and comunities."</p>
+    </li>
+    <li class="grid items-center gap-4 border border-default bg-offset p-6">
+      <YouTube id="https://youtu.be/maBBKtvqy2w?si=Ob14AJ92-peFmwhp" />
+      <p class="text-center text-offset">"The retreat is packed with practices and exercises that you can bring to your own spaces and comunities."</p>
+    </li>
+  </ul>
+</ContentSection>
