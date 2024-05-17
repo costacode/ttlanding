@@ -47,11 +47,15 @@ import { Icon } from "astro-icon";
       ?.classList.remove("hidden");
   };
 
+
   button.addEventListener("click", () => {
+
+
     const themeNext = getThemeNext();
     document.documentElement.dataset.theme = themeNext;
     localStorage.setItem("theme", themeNext);
     updateIcon();
+
   });
 
   updateIcon();
